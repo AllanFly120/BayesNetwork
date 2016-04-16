@@ -1,0 +1,39 @@
+P(Burglary = + | JohnCalls = +, MaryCalls = -)
+P(Burglary = - | JohnCalls = +, MaryCalls = -)
+EU(CallPolice = + | JohnCalls = +, MaryCalls = -)
+EU(CallPolice = - | JohnCalls = +, MaryCalls = -)
+MEU(CallPolice | JohnCalls = +, MaryCalls = -)
+P(Burglary = + | JohnCalls = +, MaryCalls = +)
+P(Burglary = - | JohnCalls = +, MaryCalls = +)
+EU(CallPolice = + | JohnCalls = +, MaryCalls = +)
+EU(CallPolice = - | JohnCalls = +, MaryCalls = +)
+MEU(CallPolice | JohnCalls = +, MaryCalls = +)
+******
+Burglary
+0.001
+***
+CallPolice
+decision
+***
+Earthquake
+0.002
+***
+Alarm | Burglary Earthquake
+0.95 + +
+0.94 + -
+0.29 - +
+0.001 - -
+***
+JohnCalls | Alarm
+0.9 +
+0.05 -
+***
+MaryCalls | Alarm
+0.7 +
+0.01 -
+******
+utility | Burglary CallPolice
+0 + +
+-100 + -
+-5 - +
+0 - -
