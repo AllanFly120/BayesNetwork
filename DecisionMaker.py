@@ -1,9 +1,9 @@
 import sys
 import copy
-from collections import OrderedDict
-from decimal import *
-# input_path = "./HW3_samples/sample07.txt"
-# output_path = "./output.txt"
+#from collections import OrderedDict
+#from decimal import *
+input_path = "./HW3_samples/sample07.txt"
+output_path = "./output.txt"
 input_path = sys.argv[-1]
 output_path = './output.txt'
 
